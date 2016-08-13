@@ -1,0 +1,32 @@
+.referenzen-container{
+    margin: 20px 0;
+    background: #FFF;
+    padding: 30px 20px;
+}
+
+.referenzen-container > img {
+    width: 15%;
+    height: auto;
+    margin-left: 10px;
+    @include mobile{
+        width: 25%;
+    };
+}
+
+.referenzen-container > ul {
+    list-style-type: decimal;
+}
+
+.referenzen-container > h1{
+    font-family:Gudea, Arial, Verdana, Sans-serif;
+    color: $main-color;
+    font-size: 24px;
+    font-weight: bold;
+    @include mobile{
+        font-size: 20px;
+    };
+}
+
+.bigger-logo{
+    width: 22% !important;
+}

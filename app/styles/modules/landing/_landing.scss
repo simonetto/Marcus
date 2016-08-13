@@ -1,0 +1,58 @@
+$main-color: #CCAB6A;
+
+.teaser{
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.photoBlock{
+    background-color: #619BC9;
+    @include mobile{
+        margin-bottom: 20px;
+    };
+}
+
+.photoTxt{
+    text-align: center;
+    padding: 12px 10px 8px;
+    border-bottom: 1px solid #FFF;
+}
+
+.photoTxt > a {
+    color: #FFF;
+    font-family:Gudea, Arial, Verdana, Sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.img{
+    height: 174px;
+    cursor: pointer;
+    @include mobile{
+        height: 200px;
+    };
+}
+
+.img-txt{
+    height: 88px;
+    color: #FFF;
+    font-family:Gudea, Arial, Verdana, Sans-serif;
+    padding: 10px 0 0 10px;
+}
+
+.landing-box{
+    text-align: center;
+    color: #FFF;
+    background-color: $main-color;
+    padding: 5px 15px 20px 15px;
+}
+
+.teaser-img{
+    width: 100%;
+    height: auto;
+}
+
+.full-frame{
+    width: 100%;
+}

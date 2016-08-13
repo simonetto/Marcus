@@ -1,0 +1,29 @@
+$phone-width: 768px;
+$tablet-width: 930px;
+$browser-context: 16px;
+
+.mixin-in {
+    text-align: center;
+}
+
+@mixin mobile {
+    @media (max-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet-width}) and (min-width: #{$phone-width + 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$tablet-width + 1px}) {
+        @content;
+    }
+}
+
+@function em($pixels, $context: $browser-context){
+    @return #{$pixels/$context}em
+}

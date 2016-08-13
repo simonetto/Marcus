@@ -1,0 +1,478 @@
+/**
+ * Main scss file to be pre-compiled
+ */
+.mixin-in {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font: 15px "PT Sans", Arial, Verdana, Sans-serif;
+  color: #505050;
+  line-height: 22px;
+  background-color: #FAF9F7;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.93);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 146px;
+  z-index: 1;
+  border-bottom: 4px solid #CCAB6A;
+}
+@media (min-width: 931px) {
+  .header {
+    height: 100px;
+  }
+}
+
+.header-parent-menu {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 931px) {
+  .header-parent-menu {
+    float: right;
+    width: auto;
+  }
+}
+
+.header-child-menu {
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .header-child-menu {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 66px;
+  border-top: 2px solid #CCAB6A;
+}
+.footer .footer-link {
+  color: #707070;
+  padding-left: 7px;
+  margin-left: 7px;
+  font-size: 0.85em;
+}
+.footer .footer-border {
+  border-left: 1px solid #707070;
+}
+.footer .footer-span {
+  padding-right: 14px;
+}
+
+.carousel {
+  padding-top: 166px;
+}
+@media (min-width: 931px) {
+  .carousel {
+    padding-top: 120px;
+  }
+}
+
+.carousel-content {
+  height: 340px;
+  border: 2px solid #CCAB6A;
+  font-family: Gudea, Arial, Verdana, Sans-serif;
+}
+@media (max-width: 768px) {
+  .carousel-content {
+    height: 194px;
+  }
+}
+
+.text-container {
+  margin: 20px 0;
+  background: #FFF;
+  padding: 30px 20px;
+}
+
+.text-container > img {
+  width: 30%;
+  min-width: 120px;
+  height: auto;
+  float: right;
+  border: 2px solid #CCAB6A;
+  margin-left: 10px;
+}
+
+.text-container > ul {
+  list-style-type: decimal;
+}
+
+.text-container > h1 {
+  font-family: Gudea, Arial, Verdana, Sans-serif;
+  color: #CCAB6A;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .text-container > h1 {
+    font-size: 20px;
+  }
+}
+
+.line {
+  border: 1px solid #CCAB6A;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  padding: 10px;
+  float: left;
+  cursor: pointer;
+}
+@media (min-width: 931px) {
+  .menu-item {
+    margin-top: 54px;
+    display: block !important;
+  }
+}
+@media (max-width: 930px) and (min-width: 769px) {
+  .menu-item {
+    display: block !important;
+  }
+}
+@media (max-width: 768px) {
+  .menu-item {
+    float: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: #619bc9;
+    background-color: rgba(97, 155, 201, 0.95);
+  }
+}
+
+.menu-item-hover, .menu-item:hover {
+  background-color: #528bc2;
+  background-color: rgba(82, 139, 194, 0.97);
+  color: #FFF;
+}
+
+.menu-item-selected {
+  background-color: #CCAB6A;
+  color: #FFF;
+}
+
+.navigation-item {
+  display: none !important;
+  background-color: #C2A25E;
+  color: #FFF;
+}
+@media (max-width: 768px) {
+  .navigation-item {
+    display: block !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  margin-top: -1px;
+  background-color: #8E8E8E;
+  color: #FFF;
+  border: 1px solid #8E8E8E;
+}
+
+.dropdown-menu > li > a {
+  color: #FFF;
+}
+
+.dropdown-menu > li > a:hover {
+  color: #FFF;
+  background-color: #CCAB6A;
+}
+
+.header-img-container {
+  width: 60%;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 931px) {
+  .header-img-container {
+    float: left;
+    margin: 0;
+  }
+}
+@media (max-width: 930px) and (min-width: 769px) {
+  .header-img-container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header-img-container {
+    width: 100%;
+  }
+}
+
+.header-img-container > a > img {
+  height: auto;
+  margin: auto;
+}
+
+.left-header-img {
+  width: 47% !important;
+}
+
+.right-header-img {
+  width: 43% !important;
+}
+
+.outer-container {
+  position: relative;
+  height: 66px;
+  padding: 0;
+}
+
+.inner-container {
+  top: 45%;
+  width: 100%;
+}
+@media (min-width: 931px) {
+  .inner-container {
+    position: absolute;
+  }
+}
+
+.footer-items, .footer-left, .footer-right {
+  position: relative;
+  text-align: center;
+}
+@media (min-width: 931px) {
+  .footer-items, .footer-left, .footer-right {
+    text-align: left;
+  }
+}
+
+@media (min-width: 931px) {
+  .footer-left {
+    float: left;
+  }
+}
+
+@media (min-width: 931px) {
+  .footer-right {
+    float: right;
+  }
+}
+
+.next-line {
+  display: block;
+}
+
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.sitemap > li {
+  list-style-type: square;
+}
+
+.carousel-main {
+  background: url("../resources/images/MainPicture.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-privatkunden {
+  background: url("../resources/images/kind.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-leistungen {
+  background: url("../resources/images/wine.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-partner {
+  background: url("../resources/images/partners.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-beratung {
+  background: url("../resources/images/lighthouse.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-vorsorgevollmacht {
+  background: url("../resources/images/doctors.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-sitemap {
+  background: url("../resources/images/glaciar.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-gewerbekunden {
+  background: url("../resources/images/saving.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-kontakt {
+  background: url("../resources/images/Kontakt.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-uber-mich {
+  background: url("../resources/images/uberUns.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-summer {
+  background: url("../resources/images/summer.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-winter {
+  background: url("../resources/images/winter.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-autumn {
+  background: url("../resources/images/autumn.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-spring {
+  background: url("../resources/images/spring.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-new-year {
+  background: url("../resources/images/newyear.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.carousel-christmas {
+  background: url("../resources/images/christmas.jpg") no-repeat left;
+  background-size: 100%;
+}
+
+.teaser {
+  margin-top: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.photoBlock {
+  background-color: #619BC9;
+}
+@media (max-width: 768px) {
+  .photoBlock {
+    margin-bottom: 20px;
+  }
+}
+
+.photoTxt {
+  text-align: center;
+  padding: 12px 10px 8px;
+  border-bottom: 1px solid #FFF;
+}
+
+.photoTxt > a {
+  color: #FFF;
+  font-family: Gudea, Arial, Verdana, Sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.img {
+  height: 174px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .img {
+    height: 200px;
+  }
+}
+
+.img-txt {
+  height: 88px;
+  color: #FFF;
+  font-family: Gudea, Arial, Verdana, Sans-serif;
+  padding: 10px 0 0 10px;
+}
+
+.landing-box {
+  text-align: center;
+  color: #FFF;
+  background-color: #CCAB6A;
+  padding: 5px 15px 20px 15px;
+}
+
+.teaser-img {
+  width: 100%;
+  height: auto;
+}
+
+.full-frame {
+  width: 100%;
+}
+
+.uber-mich-item {
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.referenzen-container {
+  margin: 20px 0;
+  background: #FFF;
+  padding: 30px 20px;
+}
+
+.referenzen-container > img {
+  width: 15%;
+  height: auto;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .referenzen-container > img {
+    width: 25%;
+  }
+}
+
+.referenzen-container > ul {
+  list-style-type: decimal;
+}
+
+.referenzen-container > h1 {
+  font-family: Gudea, Arial, Verdana, Sans-serif;
+  color: #CCAB6A;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .referenzen-container > h1 {
+    font-size: 20px;
+  }
+}
+
+.bigger-logo {
+  width: 22% !important;
+}
+
+.orange-logo {
+  height: auto;
+}
+
+.logo-container {
+  margin-top: 30px;
+}
