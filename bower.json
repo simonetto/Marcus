@@ -1,5 +1,5 @@
 {
-  "name": "new-marcus",
+  "name": "marcus",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.4.0",
@@ -16,7 +16,7 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "newMarcusApp",
+  "moduleName": "marcus",
   "overrides": {
     "bootstrap": {
       "main": [

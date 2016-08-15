@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width">
     <meta name="google-site-verification" content="6LcicQTaPL34dMQGrVRsXubv6nyA5USHdQIJQdGcWCQ" />
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css(app) styles/bundle.css -->
-
-          <link rel="stylesheet" href="styles/bootstrap.css">
-          <link rel="stylesheet" href="styles/bundle.css">
-
-        <!-- endbuild -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 </head>
   <body ng-app="Marcus">
 
@@ -42,7 +42,7 @@
 
     </script>
 
-    <!-- build:js scripts/modules.js -->
+    <!-- build:js(.) scripts/vendor.js -->
 
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>

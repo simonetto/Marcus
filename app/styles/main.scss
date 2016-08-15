@@ -1,0 +1,18 @@
+/**
+ * Main scss file to be pre-compiled
+ */
+
+ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+ // bower:scss
+ @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+ // endbower
+
+// global
+@import "mixins";
+@import "variables";
+@import "landing";
+@import "theme";
+@import "modules";
+
+// Auto imported modules (feature generator) DON'T DELETE "yo:" lines
+// yo:includeSass
