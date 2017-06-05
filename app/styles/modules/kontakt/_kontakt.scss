@@ -1,0 +1,12 @@
+.address-wrapper {
+  @include desktop{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.mobile-only {
+  @include desktop{
+    display: none;
+  }
+}
